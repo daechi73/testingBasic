@@ -5,7 +5,13 @@ const calculator = (a, b) => {
   const subtract = (a, b) => {
     return a - b;
   };
-  return { add, subtract };
+  const multiply = (a, b) => {
+    return a * b;
+  };
+  const divide = (a, b) => {
+    return a / b;
+  };
+  return { add, subtract, multiply, divide };
 };
 
 export default calculator;
