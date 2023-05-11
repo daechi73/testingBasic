@@ -1,14 +1,13 @@
-const caesarCipher = (string, shiftI) => {
+const caesarCipher = (string) => {
   let cipheredString = "";
-  const shiftIndex = shiftI;
 
   const getCharCode = (char) => {
     return char.charCodeAt(0);
   };
-  const shift = () => {
+  const shift = (shiftI) => {
     for (let i = 0; i < string.length; i++) {
       cipheredString += String.fromCharCode(
-        getCharCode(string.charAt(i)) + shiftIndex
+        getCharCode(string.charAt(i)) + shiftI
       );
     }
     return cipheredString;
